@@ -1,0 +1,17 @@
+:root{
+    --colorFuente: #;
+    --colorFuente2: #;
+    --colorFondo: #;
+    --colorHeader: #;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    width: 20.0rem;
+}
