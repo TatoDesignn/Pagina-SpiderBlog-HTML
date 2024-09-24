@@ -1,8 +1,9 @@
 :root{
-    --colorFuente: #;
+    --colorFuente: #f1f1f1;
     --colorFuente2: #;
     --colorFondo: #;
-    --colorHeader: #;
+    --colorHeader: ##ff1e1e;
+    --FuentePrincipal: 'Arial', sans-serif;
 }
 
 *{
@@ -12,6 +13,176 @@
 }
 
 
-img{
-    width: 20.0rem;
+body {
+    font-family: var(--FuentePrincipal);
+    background-color: #121212; 
+    color: var(--colorFuente); 
+}
+
+header {
+    background-color: #ff1e1e; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #000;
+    border-radius: 5px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Descripcion {
+    padding: 40px;
+    max-width: 1000px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.Descripcion .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Descripcion h1 {
+    color: #ff1e1e;
+    font-size: 3rem;
+}
+
+.Descripcion p {
+    max-width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.Descripcion img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.Comics {
+    padding: 40px;
+    background-color: #1c1c1c;
+    max-width: 1000px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.Comics h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff1e1e;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+section h3 {
+    color: #ff1e1e;
+    margin: 10px 0;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 50%;
+    text-align: justify;
+}
+
+section button {
+    background-color: #ff1e1e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section button:hover {
+    background-color: #ff7f7f;
+}
+
+.Peliculas {
+    padding: 40px;
+    background-color: #1c1c1c;
+    max-width: 1000px;
+    border-radius: 20px;
+}
+
+.Peliculas h2 {
+    color: #ff1e1e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Peliculas section {
+    background-color: #292929;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.Peliculas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Peliculas ul li {
+    margin-bottom: 10px;
+}
+
+.Peliculas ul li strong {
+    color: #ff1e1e;
 }
